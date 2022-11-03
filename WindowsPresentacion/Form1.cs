@@ -76,5 +76,11 @@ namespace WindowsPresentacion
                 lstMostrarListaHabitaciones.Items.Add("Numero de habitacion: " + habitacion.Numero + " Estado: " + habitacion.Estado);
             }
         }
+
+        private void btnPacienteEdad_Click(object sender, EventArgs e)
+        {
+            Paciente unPaciente = new Paciente(9, "Juan", "Lopez", "av colon 7652", "22345167180", null, 345, new DateTime(1985,12,07));
+            MessageBox.Show("Nombre: " + unPaciente.Nombre + "\nApellido: " + unPaciente.Apellido + "\nEdad: " + unPaciente.Edad);
+        }
     }
 }

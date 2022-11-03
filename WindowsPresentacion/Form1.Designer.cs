@@ -38,6 +38,7 @@
             this.btnClinicos = new System.Windows.Forms.Button();
             this.btnMostrarHabitaciones = new System.Windows.Forms.Button();
             this.lstMostrarListaHabitaciones = new System.Windows.Forms.ListBox();
+            this.btnPacienteEdad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridMedicos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPacientes)).BeginInit();
             this.SuspendLayout();
@@ -135,11 +136,22 @@
             this.lstMostrarListaHabitaciones.Size = new System.Drawing.Size(530, 84);
             this.lstMostrarListaHabitaciones.TabIndex = 11;
             // 
+            // btnPacienteEdad
+            // 
+            this.btnPacienteEdad.Location = new System.Drawing.Point(73, 495);
+            this.btnPacienteEdad.Name = "btnPacienteEdad";
+            this.btnPacienteEdad.Size = new System.Drawing.Size(519, 23);
+            this.btnPacienteEdad.TabIndex = 12;
+            this.btnPacienteEdad.Text = "Mostrar Nombre y edad de un paciente";
+            this.btnPacienteEdad.UseVisualStyleBackColor = true;
+            this.btnPacienteEdad.Click += new System.EventHandler(this.btnPacienteEdad_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1217, 558);
+            this.Controls.Add(this.btnPacienteEdad);
             this.Controls.Add(this.lstMostrarListaHabitaciones);
             this.Controls.Add(this.btnMostrarHabitaciones);
             this.Controls.Add(this.btnClinicos);
@@ -171,6 +183,7 @@
         private System.Windows.Forms.Button btnClinicos;
         private System.Windows.Forms.Button btnMostrarHabitaciones;
         private System.Windows.Forms.ListBox lstMostrarListaHabitaciones;
+        private System.Windows.Forms.Button btnPacienteEdad;
     }
 }
 
