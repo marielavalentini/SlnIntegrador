@@ -59,16 +59,16 @@
             this.GridMedicos.Name = "GridMedicos";
             this.GridMedicos.RowHeadersWidth = 51;
             this.GridMedicos.RowTemplate.Height = 24;
-            this.GridMedicos.Size = new System.Drawing.Size(113, 193);
+            this.GridMedicos.Size = new System.Drawing.Size(435, 193);
             this.GridMedicos.TabIndex = 1;
             // 
             // listMedicos
             // 
             this.listMedicos.FormattingEnabled = true;
             this.listMedicos.ItemHeight = 16;
-            this.listMedicos.Location = new System.Drawing.Point(209, 80);
+            this.listMedicos.Location = new System.Drawing.Point(489, 80);
             this.listMedicos.Name = "listMedicos";
-            this.listMedicos.Size = new System.Drawing.Size(394, 132);
+            this.listMedicos.Size = new System.Drawing.Size(114, 132);
             this.listMedicos.TabIndex = 2;
             // 
             // GridPacientes
@@ -78,16 +78,16 @@
             this.GridPacientes.Name = "GridPacientes";
             this.GridPacientes.RowHeadersWidth = 51;
             this.GridPacientes.RowTemplate.Height = 24;
-            this.GridPacientes.Size = new System.Drawing.Size(89, 200);
+            this.GridPacientes.Size = new System.Drawing.Size(361, 200);
             this.GridPacientes.TabIndex = 3;
             // 
             // lstPacientes
             // 
             this.lstPacientes.FormattingEnabled = true;
             this.lstPacientes.ItemHeight = 16;
-            this.lstPacientes.Location = new System.Drawing.Point(791, 77);
+            this.lstPacientes.Location = new System.Drawing.Point(1050, 77);
             this.lstPacientes.Name = "lstPacientes";
-            this.lstPacientes.Size = new System.Drawing.Size(375, 196);
+            this.lstPacientes.Size = new System.Drawing.Size(116, 196);
             this.lstPacientes.TabIndex = 4;
             // 
             // btnMedicosClinicos

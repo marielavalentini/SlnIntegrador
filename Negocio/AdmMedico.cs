@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmMedico
+    public static class AdmMedico
     {
-        List<Medico> listaMedicos;
+        static List<Medico> listaMedicos;
 
-        public List<Medico> Listar()
+        public static List<Medico> Listar()
         {
             listaMedicos = new List<Medico>();
 
@@ -36,7 +36,7 @@ namespace Negocio
             return listaMedicos;
         }
 
-        public List<Medico> Listar(string Especialidad)
+        public static List<Medico> Listar(string Especialidad)
         {
             listaMedicos = Listar();
             List<Medico> listaAux = new List<Medico>();
@@ -51,25 +51,25 @@ namespace Negocio
             return listaAux;
         }
 
-        public int Insertar (Medico unMedico)
+        public static int Insertar (Medico unMedico)
         {
             //TODO completar metodo para insertar un medico en la lista
             return 0;
         }
 
-        public int Eliminar (int id)
+        public static int Eliminar (int id)
         {
             //TODO agregar metodo para eliminar un medico de la lista por id
             return 0;
         }
 
-        public Medico TraerUno (int id)
+        public static Medico TraerUno (int id)
         {
             //TODO agregar el metodo para buscar un medico en la lista por id
             return null;
         }
 
-        public List<Medico> Cargar (List<Medico> unaListaMedicos)
+        public static List<Medico> Cargar (List<Medico> unaListaMedicos)
         {
             unaListaMedicos = new List<Medico>();
 

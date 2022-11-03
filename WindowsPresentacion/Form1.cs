@@ -28,12 +28,10 @@ namespace WindowsPresentacion
         private void btnMostrarMedicos_Click(object sender, EventArgs e)
         {
             listaMedicos = new List<Medico>();
-            AdmMedico admMedico = new AdmMedico();
-            listaMedicos = admMedico.Listar();
+            listaMedicos = AdmMedico.Listar();
 
             listaPacientes = new List<Paciente>();
-            AdmPaciente admPaciente = new AdmPaciente();
-            listaPacientes = admPaciente.Listar();
+            listaPacientes = AdmPaciente.Listar();
 
             GridMedicos.DataSource = listaMedicos;
             GridPacientes.DataSource = listaPacientes;
@@ -49,8 +47,6 @@ namespace WindowsPresentacion
             }
         }
 
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -61,30 +57,24 @@ namespace WindowsPresentacion
         private void btnClinicos_Click(object sender, EventArgs e)
         {
             listaMedicos = new List<Medico>();
-            AdmMedico admMedico = new AdmMedico();
-            listaMedicos = admMedico.Listar("clinico");
-
-          
+            listaMedicos = AdmMedico.Listar("clinico");
 
             foreach (Medico medico in listaMedicos)
             {
                 lstClinicos.Items.Add("Nombre: " + medico.Nombre + "" + "Apellido: " + medico.Apellido + "Especialidad: " + medico.Especialidad);
             }
         }
+        //Mostrar una lista con el número y estado de las habitaciones en un listBox
 
         private void btnMostrarHabitaciones_Click(object sender, EventArgs e)
         {
             listaHabitaciones = new List<Habitacion>();
-            AdmHabitacion admHabitacion = new AdmHabitacion();
-            listaHabitaciones = admHabitacion.Listar();
+            listaHabitaciones = AdmHabitacion.Listar();
 
             foreach (Habitacion habitacion in listaHabitaciones)
             {
-                lstMostrarListaHabitaciones.Items.Add("Numero de habitacion: " + "" + habitacion.Numero + "" + "Estado: " + "" + habitacion.Estado);
+                lstMostrarListaHabitaciones.Items.Add("Numero de habitacion: " + habitacion.Numero + " Estado: " + habitacion.Estado);
             }
         }
-
-        //Mostrar una lista con el número y estado de las habitaciones en un listBox 
-
     }
 }

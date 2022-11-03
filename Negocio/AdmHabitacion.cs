@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmHabitacion
+    public static class AdmHabitacion
     {
-        List<Habitacion> listaHabitaciones;
+         static List<Habitacion> listaHabitaciones;
 
-        public List<Habitacion> Listar()
+        public static List<Habitacion> Listar()
         {
             listaHabitaciones = new List<Habitacion>();
 
@@ -31,25 +31,25 @@ namespace Negocio
             return listaHabitaciones;
         }
 
-        public List<Habitacion> Listar (string Estado)
+        public static List<Habitacion> Listar (string Estado)
         {
             //TODO agregar metodo para listar habitaciones por estado, recibido por parametro
             return null;
         }
 
-        public int Insertar (Habitacion unaHabitacion)
+        public static int Insertar (Habitacion unaHabitacion)
         {
             //TODO agregar un metodo para insertar una habitacion en la lista
             return 0;
         }
 
-        public int Eliminar (int id)
+        public static int Eliminar (int id)
         {
             //TODO agregar un metodo para eliminar una habitacion de una lista por id
             return 0;
         }
 
-        public Habitacion TraerUno (int Numero)
+        public static Habitacion TraerUno (int Numero)
         {
             //TODO agregar un metodo para traer una habitacion por numero
             return null;
